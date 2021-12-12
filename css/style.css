@@ -1687,7 +1687,7 @@ input[type="radio"] .styled:checked+label::after {
 
 .banner-main {
      position: relative;
-     background-color: #136af8;
+     background-color: #708eb1;
      background-size: 100% 100%;
 
 }
@@ -1750,7 +1750,7 @@ input[type="radio"] .styled:checked+label::after {
      padding: 0px 0px 0px 0px;
      font-size: 50px;
      font-weight: bold;
-     color: #136af8;
+     color: #708eb1;
      line-height: 50px;
      position: relative;
      margin-bottom: 20px;
@@ -1816,7 +1816,7 @@ input[type="radio"] .styled:checked+label::after {
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding: 70px 0px 10px 0px;
-     background-color: #136af8;
+     background-color: #708eb1;
 }
 
 .about .about-box {
@@ -2375,7 +2375,7 @@ ul.location_icon span {
 
      text-align: center;
      font-size: 29px;
-     color: #136af8;
+     color: #708eb1;
      padding-top: 25px;
      line-height: 25px;
      font-weight: normal;
@@ -2400,13 +2400,13 @@ ul.location_icon span {
 
 .sport_product_main {
      min-height: 590px;
-     background: #136af8;
+     background: #708eb1;
      position: relative;
 
 }
 
 .read-more {
-     background-color: #136af8;
+     background-color: #708eb1;
      width: 50%;
      text-align: center;
      border-radius: 25px;
@@ -2419,7 +2419,7 @@ ul.location_icon span {
 
 
 .blue_bg {
-     background-color: #136af8;
+     background-color: #708eb1;
 }
 
 .section {
@@ -2472,7 +2472,7 @@ ul.location_icon span {
 .john {
      width: 100%;
      float: left;
-     background-color: #136af8;
+     background-color: #708eb1;
      height: auto;
      background-size: 100%;
      background-repeat: no-repeat;
@@ -2604,7 +2604,7 @@ ul.location_icon span {
      width: 100%;
      text-align: center;
      margin: 0px;
-     border-bottom: 2px solid #136af8;
+     border-bottom: 2px solid #708eb1;
      color: #fff;
 }
 
@@ -2671,7 +2671,7 @@ ul.location_icon span {
 .footer {
      width: 100%;
      float: left;
-     background-color: #136af8;
+     background-color: #708eb1;
      height: auto;
      padding: 0px;
 }
@@ -2708,7 +2708,7 @@ ul.location_icon span {
 .header_main {
      width: 100%;
      float: left;
-     background-color: #136af8;
+     background-color: #708eb1;
      padding-top: 20px;
 }
 
@@ -2721,7 +2721,7 @@ ul.location_icon span {
 button.btn.btn-primary,
 button.btn.btn-primary:hover,
 button.btn.btn-primary:focus {
-     background: #136af8;
+     background: #708eb1;
      padding: 10 40px;
 }
 
@@ -2777,7 +2777,7 @@ button.btn.btn-primary:focus {
 }
 
 .product .titlepage h2 {
-     color: #136af8;
+     color: #708eb1;
 }
 
 .black {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
    <!-- basic -->
@@ -9,18 +9,27 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Mag2Workout</title>
-   <meta name="keywords" content="">
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <title>Mag2Workout - Aplicación de Entrenamiento Personal | Entrenamientos Económicos</title>
+   <meta name="keywords" content="entrenamiento personal, aplicación fitness, rutinas de ejercicio, entrenamiento económico, Mag2Workout, fitness app, ejercicios en casa">
+   <meta name="description" content="Mag2Workout es tu aplicación de entrenamiento personal donde encontrarás rutinas de ejercicio económicas y efectivas. Perfecta para personas entre 18-30 años que quieren empezar un estilo de vida saludable.">
+   <meta name="author" content="Mag2Workout Team">
+   <meta name="robots" content="index, follow">
+   <meta property="og:title" content="Mag2Workout - Aplicación de Entrenamiento Personal">
+   <meta property="og:description" content="Entrenamientos económicos y efectivos para empezar tu estilo de vida saludable">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://mag2workout.com">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Mag2Workout - Aplicación de Entrenamiento Personal">
+   <meta name="twitter:description" content="Entrenamientos económicos y efectivos para empezar tu estilo de vida saludable">
    <!-- bootstrap css -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <!-- style css -->
    <link rel="stylesheet" href="css/style.css">
    <!-- Responsive-->
    <link rel="stylesheet" href="css/responsive.css">
-   <!-- fevicon -->
-   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- favicon -->
+   <link rel="icon" href="images/logo.png" type="image/png" />
+   <link rel="apple-touch-icon" href="images/logo.png">
    <!-- Scrollbar Custom CSS -->
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    <!-- Tweaks for older IEs-->
@@ -37,13 +46,21 @@
 <!-- body -->
 
 <body class="main-layout">
+   <!-- Aviso de accesibilidad -->
+   <div class="sr-only-focusable" role="region" aria-label="Aviso de accesibilidad">
+      <p>Esta web cumple con el nivel AAA de accesibilidad. Si tienes problemas, contacta con <a href="mailto:eae@eae.es">eae@eae.es</a>.</p>
+   </div>
+   <!-- Skip to main content link for accessibility -->
+   <a href="#main-content" class="skip-link sr-only sr-only-focusable">Saltar al contenido principal</a>
+   
    <!-- loader  -->
-   <div class="loader_bg">
-      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   <div class="loader_bg" aria-hidden="true">
+      <div class="loader"><img src="images/loading.gif" alt="" role="presentation" /></div>
    </div>
    <!-- end loader -->
+   
    <!-- header -->
-   <header class="section">
+   <header class="section" role="banner">
       <!-- header inner -->
       <div class="header">
          <div class="container">
@@ -51,14 +68,13 @@
                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                   <div class="menu-area">
                      <div class="limit-box">
-                        <nav class="main-menu">
+                        <nav class="main-menu" role="navigation" aria-label="Navegación principal">
                            <ul class="menu-area-main">
-                              <li> <a href="index.html"></a> </li>
-                              <li> <a href="about.html"></a> </li>
-                              <li><a href="testmonial.html"></a></li>
-                              <li><a href="clients.html"></a></li>
-                              <li><a href="contact.html"></a></li>
-                              <!-- <li class="last"><a href="#"><img src="images/search_icon.png" alt="icon" /></a></li> -->
+                              <li> <a href="index.html" aria-current="page">Inicio</a> </li>
+                              <li> <a href="about.html">Sobre Nosotros</a> </li>
+                              <li><a href="testmonial.html">Testimonios</a></li>
+                              <li><a href="clients.html">Clientes</a></li>
+                              <li><a href="contact.html">Contacto</a></li>
                            </ul>
                         </nav>
                      </div>
@@ -71,261 +87,278 @@
    </header>
    <!-- end header -->
 
-   <section>
-      <div id="main_slider" class="section carousel slide banner-main" data-ride="carousel">
-         <ol class="carousel-indicators">
-            <li data-target="#main_slider" data-slide-to="0" class="active"></li>
-            <li data-target="#main_slider" data-slide-to="1"></li>
-            <li data-target="#main_slider" data-slide-to="2"></li>
-         </ol>
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <div class="container">
-                  <div class="row marginii">
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="carousel-caption ">
-                           <h1>Bienvendio a <strong class="color">Mag2Workout</strong></h1>
-                           <p>El sitio web donde con muy poco dinero tendrás muchos entrenamientos disponibles.</p>
+   <main id="main-content" role="main">
+      <section>
+         <div id="main_slider" class="section carousel slide banner-main" data-ride="carousel" role="region" aria-label="Carrusel principal" aria-live="polite">
+            <ol class="carousel-indicators">
+               <li data-target="#main_slider" data-slide-to="0" class="active" aria-label="Diapositiva 1"></li>
+               <li data-target="#main_slider" data-slide-to="1" aria-label="Diapositiva 2"></li>
+               <li data-target="#main_slider" data-slide-to="2" aria-label="Diapositiva 3"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="row marginii">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="carousel-caption ">
+                              <h1>Bienvenido a <strong class="color">Mag2Workout</strong></h1>
+                              <p>El sitio web donde con muy poco dinero tendrás muchos entrenamientos disponibles.</p>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="img-box">
+                              <figure><img src="images/magworkout.png" alt="Logo de Mag2Workout - Aplicación de entrenamiento personal" /></figure>
+                           </div>
                         </div>
                      </div>
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="img-box">
-                           <figure><img src="images/magworkout.png" alt="img" /></figure>
+                  </div>
+               </div>
+            </div>
+            <!-- Controles accesibles de carrusel -->
+            <div class="d-flex justify-content-center mt-2" aria-label="Controles del carrusel">
+               <button id="carousel-pause" class="btn btn-secondary btn-sm mr-2" aria-pressed="false" aria-label="Pausar carrusel" onclick="pauseCarousel()">Pausar</button>
+               <button id="carousel-play" class="btn btn-secondary btn-sm" aria-pressed="true" aria-label="Reanudar carrusel" onclick="playCarousel()">Reanudar</button>
+            </div>
+            <script>
+               var carouselPaused = false;
+               function pauseCarousel() {
+                  $('#main_slider').carousel('pause');
+                  carouselPaused = true;
+                  document.getElementById('carousel-pause').setAttribute('aria-pressed', 'true');
+                  document.getElementById('carousel-play').setAttribute('aria-pressed', 'false');
+               }
+               function playCarousel() {
+                  $('#main_slider').carousel('cycle');
+                  carouselPaused = false;
+                  document.getElementById('carousel-pause').setAttribute('aria-pressed', 'false');
+                  document.getElementById('carousel-play').setAttribute('aria-pressed', 'true');
+               }
+            </script>
+         </div>
+      </section>
+      <!-- plant -->
+
+      <!--about -->
+      <section class="section about" aria-labelledby="trabajo-titulo">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="titlepage">
+                     <h2 id="trabajo-titulo"><span class="black">El</span> Trabajo</h2>
+                     <p>En el siguiente trabajo de investigación, se realizó un estudio estadístico, con la finalidad de
+                        obtener datos precisos del mercado de las aplicaciones
+                        que motivan la actividad física. Para realizar el correcto estudio nos planteamos una serie de
+                        objetivos que debemos de cumplir para poder tener una visión cercana acerca de la aceptación de
+                        nuestro producto en el mercado. Utilizando las herramientas precisas para obtener una estimación lo
+                        más certera posible, como lo es R studio. A continuación conoceremos todos los resultados arrojados
+                        que brindarán una visión más clara acerca de la rentabilidad de MAG2 Workout.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div id="vision_slider" class="section carousel slide banner-main" data-ride="carousel" role="region" aria-label="Visión de negocio" aria-live="polite">
+            <ol class="carousel-indicators">
+               <li data-target="#vision_slider" data-slide-to="0" class="active" aria-label="Diapositiva 1"></li>
+               <li data-target="#vision_slider" data-slide-to="1" aria-label="Diapositiva 2"></li>
+               <li data-target="#vision_slider" data-slide-to="2" aria-label="Diapositiva 3"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="row marginii">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="carousel-sporrt_text ">
+                              <h2 class="sporrt_text">Nuestra visión de negocio</h2>
+                              <p class="lorem_text">Ser el mejor amigo de las nuevas generaciones:
+                                 Nuestro principal objetivo es atraer ese porcentaje de la población que está interesada en
+                                 iniciar un estilo de vida saludable, luego de realizar un correcto estudio del mercado,
+                                 con las herramientas prudentes podemos deducir que nuestro cliente ideal son las personas
+                                 entre 18 y treinta años, el cual tenemos la seguridad de que un 41% de la población en
+                                 españa está alrededor de esta edad, lo cual nos asegura un amplio margen de mercado.</p>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="img-box">
+                              <figure><img src="images/child-image.png"
+                                    style="max-width: 100%; border: 15px solid #fff;" alt="Persona joven haciendo ejercicio" /></figure>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   <!-- plant -->
+      </section>
 
-   <!--about -->
-   <div class="section about ">
-      <div class="container">
-         <div class="row">
-            <div class="col-12">
-               <div class="titlepage">
-                  <h2><strong class="black"> El</strong> Trabajo</h2>
-                  <span>En el siguiente trabajo de investigación, se realizó un estudio estadístico, con la finalidad de
-                     obtener datos precisos del mercado de las aplicaciones
-                     que motivan la actividad física. Para realizar el correcto estudio nos planteamos una serie de
-                     objetivos que debemos de cumplir para poder tener una visión cercana acerca de la aceptación de
-                     nuestro producto en el mercado. Utilizando las herramientas precisas para obtener una estimación lo
-                     más certera posible, como lo es R studio. A continuación conoceremos todos los resultados arrojados
-                     que brindarán una visión más clara acerca de la rentabilidad de MAG2 Workout.</span>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-
-
-   <section>
-      <div id="main_slider" class="section carousel slide banner-main" data-ride="carousel">
-         <ol class="carousel-indicators">
-            <li data-target="#main_slider" data-slide-to="0" class="active"></li>
-            <li data-target="#main_slider" data-slide-to="1"></li>
-            <li data-target="#main_slider" data-slide-to="2"></li>
-         </ol>
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <div class="container">
-                  <div class="row marginii">
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="carousel-sporrt_text ">
-                           <h1 class="sporrt_text">Nuestra visión de negocio</h1>
-                           <p class="lorem_text">Ser el mejor amigo de las nuevas generaciones:
-                              Nuestro principal objetivo es atraer ese porcentaje de la población que está interesada en
-                              iniciar un estilo de vida saludable, luego de realizar un correcto estudio del mercado,
-                              con las herramientas prudentes podemos deducir que nuestro cliente ideal son las personas
-                              entre 18 y treinta años, el cual tenemos la seguridad de que un 41% de la población en
-                              españa está alrededor de esta edad, lo cual nos asegura un amplio margen de mercado.</p>
-                        </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="img-box">
-                           <figure><img src="images/child-image.png"
-                                 style="max-width: 100%; border: 15px solid #fff;" /></figure>
-                        </div>
-                     </div>
+      <section id="plant" class="section product" aria-labelledby="datos-titulo">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <div class="titlepage">
+                     <h2 id="datos-titulo"><strong class="black">Nuestros</strong> Datos</h2>
+                     <p>Aquí tenemos unas preguntas que nos hemos planteado antes de hacer el trabajo para saber muy bien a quien enfocarlo</p>
                   </div>
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   </div>
-   <!-- end about -->
+      </section>
+      
+      <section class="clothes_main section" aria-labelledby="datos-titulo">
+         <div class="container">
+            <div class="row">
 
-   <div id="plant" class="section  product">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 ">
-               <div class="titlepage">
-                  <h2><strong class="black"> Nuestros</strong> Datos</h2>
-                  <span>Aquí tenemos unas preguntas que nos hemos planteado antes de hacer el trabajo para saber muy bien a quien enfocarlo</span>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                  <div class="sport_product" style="background-color: #EFD743;">
+                     <figure><img src="images/objetivostitulo.png" alt="Título de objetivos del estudio" /> </figure> 
+                  </div>
+               </div>
+
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <div class="sport_product" style="background-color: #00BCC5;">
+                     <figure><img src="images/objetivo.png" alt="Objetivos del estudio de mercado" /> </figure> 
+                  </div>
+               </div>
+
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                  <div class="sport_product" style="background-color: #081c30;">
+                     <h3> <strong class="price_text"></strong></h3>
+                     <h4></h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12">
+                  <div class="sport_product" style="background-color: #F3F3ED;">
+                     <figure><img src="images/Captura de pantalla 2021-12-13 a las 0.06.37.png" alt="Gráfico de datos del estudio" /></figure>
+                  </div>
+               </div>
+                           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+               <div class="sport_product" style="background-color: #F3F3ED;">
+                  <figure><img src="images/Captura de pantalla 2021-12-13 a las 0.07.29.png" alt="Análisis de datos del estudio de mercado"/></figure>
                </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <div class="clothes_main section ">
-      <div class="container">
-         <div class="row">
-
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+               <div class="sport_product" style="background-color: #F3F3ED;">
+                  <figure><img src="images/Captura de pantalla 2021-12-13 a las 0.07.34.png" alt="Resultados del estudio estadístico"/></figure>
+               </div>
+            </div>
+
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                  <div class="sport_product" style="background-color: #081c30;">
+                     <h3> <strong class="price_text"></strong></h3>
+                     <h4></h4>
+                  </div>
+               </div>
+                           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                <div class="sport_product" style="background-color: #EFD743;">
-                  <figure><img src="images/objetivostitulo.png" alt="img"/"> </figure> 
+                  <figure><img src="images/aceptacion.png" alt="Gráfico de aceptación del producto en el mercado" /> </figure> 
                </div>
             </div>
 
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                <div class="sport_product" style="background-color: #00BCC5;">
-                  <figure><img src="images/objetivo.png" alt="img"/"> </figure> 
-               </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-               <div class="sport_product" style="background-color: #081c30;">
-                  <h3> <strong class="price_text"></strong></h3>
-                  <h4></h4>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12">
-               <div class="sport_product" style="background-color: #F3F3ED;">
-                  <figure><img src="images/Captura de pantalla 2021-12-13 a las 0.06.37.png" alt="img" /></figure>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-               <div class="sport_product" style="background-color: #F3F3ED;">
-                  <figure><img src="images/Captura de pantalla 2021-12-13 a las 0.07.29.png" alt="img"/></figure>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-               <div class="sport_product" style="background-color: #F3F3ED;">
-                  <figure><img src="images/Captura de pantalla 2021-12-13 a las 0.07.34.png" alt="img"/></figure>
-               </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-               <div class="sport_product" style="background-color: #081c30;">
-                  <h3> <strong class="price_text"></strong></h3>
-                  <h4></h4>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-               <div class="sport_product" style="background-color: #EFD743;">
-                  <figure><img src="images/aceptacion.png" alt="img"/"> </figure> 
-               </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-               <div class="sport_product" style="background-color: #00BCC5;">
-                  <figure><img src="images/Group 16textoAc.png" alt="img"/"> </figure> 
+                  <figure><img src="images/Group 16textoAc.png" alt="Análisis de aceptación del producto" /> </figure> 
                </div>
             </div>
 
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                <div class="sport_product" style="background-color: #EFD743;">
-                  <figure><img src="images/rentable.png" alt="img"/"> </figure>
+                  <figure><img src="images/rentable.png" alt="Análisis de rentabilidad del negocio" /> </figure>
                </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                <div class="sport_product" style="background-color: #00BCC5;">
-                  <figure><img src="images/precio.png" alt="img"/"> </figure> 
+                  <figure><img src="images/precio.png" alt="Análisis de precios del mercado" /> </figure> 
                </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-               <div class="sport_product" style="background-color: #081c30;">
-                  <h3> <strong class="price_text"></strong></h3>
-                  <h4></h4>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                  <div class="sport_product" style="background-color: #081c30;">
+                     <h3> <strong class="price_text"></strong></h3>
+                     <h4></h4>
+                  </div>
                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
-               <div class="sport_product" style="background-color: #081c30;">
-                  <h3> <strong class="price_text"></strong></h3>
-                  <h4></h4>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                  <div class="sport_product" style="background-color: #081c30;">
+                     <h3> <strong class="price_text"></strong></h3>
+                     <h4></h4>
+                  </div>
                </div>
-            </div>
 
-            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12">
+                           <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12">
                <div class="sport_product">
-                  <figure><img src="images/poblacion.png" alt="img" /></figure>
+                  <figure><img src="images/poblacion.png" alt="Distribución de la población objetivo" /></figure>
                </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                <div class="sport_product">
-                  <figure><img src="images/edades encuestados.png" alt="img"/></figure>
+                  <figure><img src="images/edades encuestados.png" alt="Distribución por edades de los encuestados"/></figure>
                </div>
             </div>
 
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                <div class="sport_product" style="background-color: #00BCC5;">
-                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.39.53.png" alt="img"/"> </figure> 
+                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.39.53.png" alt="Análisis de correlación del estudio" /> </figure> 
                </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                <div class="sport_product" style="background-color: #EFD743;">
-                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.45.35.png" alt="img"/"> </figure> 
+                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.45.35.png" alt="Gráfico de regresión del estudio" /> </figure> 
                </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                <div class="sport_product" style="background-color: #00BCC5;">
-                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.55.26.png" alt="img"/"> </figure> 
+                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.55.26.png" alt="Análisis estadístico de datos" /> </figure> 
                   <h4></h4>
                </div>
             </div>
 
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                <div class="sport_product" style="background-color: #00BCC5;">
-                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.57.14.png" alt="img"/"> </figure> 
+                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.57.14.png" alt="Resultados del análisis de mercado" /> </figure> 
                </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                <div class="sport_product" style="background-color: #EFD743;">
-                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.59.24.png" alt="img"/"> </figure> 
+                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.59.24.png" alt="Estadísticas del estudio de mercado" /> </figure> 
                </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                <div class="sport_product" style="background-color: #00BCC5;">
-                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.59.33.png" alt="img"/"> </figure> 
+                  <figure><img src="images/Captura de pantalla 2021-12-17 a las 17.59.33.png" alt="Análisis final del estudio de mercado" /> </figure> 
                   <h4></h4>
                </div>
+            </div>
             </div>
          </div>
-      </div>
-   </div>
-   </div>
-   <!-- end plant -->
+      </section>
+   </main>
 
    <!--Our  Clients -->
-   <div id="plant" class="section_Clients layout_padding padding_bottom_0">
+   <section id="plant" class="section_Clients layout_padding padding_bottom_0" aria-labelledby="equipo-titulo">
       <div class="container">
          <div class="row">
             <div class="col-md-12 ">
                <div class="titlepage">
-                  <h2> El Equipo</h2>
-                  <span style="text-align: center;">El equipo está formado por los siguientes miembros</span>
+                  <h2 id="equipo-titulo">El Equipo</h2>
+                  <p style="text-align: center;">El equipo está formado por los siguientes miembros</p>
                </div>
             </div>
          </div>
       </div>
-   </div>
-   <div class="section Clients_2 layout_padding padding-top_0">
+   </section>
+   <section class="section Clients_2 layout_padding padding-top_0">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
 
-               <div id="testimonial" class="carousel slide" data-ride="carousel">
+               <div id="testimonial" class="carousel slide" data-ride="carousel" role="region" aria-label="Testimonios del equipo">
 
                   <!-- Indicators -->
                   <ul class="carousel-indicators">
-                     <li data-target="#testimonial" data-slide-to="0" class="active"></li>
-                     <li data-target="#testimonial" data-slide-to="1"></li>
-                     <li data-target="#testimonial" data-slide-to="2"></li>
+                     <li data-target="#testimonial" data-slide-to="0" class="active" aria-label="Gerard Benitez - CEO"></li>
+                     <li data-target="#testimonial" data-slide-to="1" aria-label="Maria Fernanda Colina - CopyWriter"></li>
+                     <li data-target="#testimonial" data-slide-to="2" aria-label="Adrià Serrano - RRPP"></li>
                   </ul>
 
                   <!-- The slideshow -->
@@ -404,11 +437,11 @@
                   </div>
 
                   <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#testimonial" data-slide="prev">
-                     <span class="carousel-control-prev-icon"></span>
+                  <a class="carousel-control-prev" href="#testimonial" data-slide="prev" aria-label="Testimonio anterior">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   </a>
-                  <a class="carousel-control-next" href="#testimonial" data-slide="next">
-                     <span class="carousel-control-next-icon"></span>
+                  <a class="carousel-control-next" href="#testimonial" data-slide="next" aria-label="Testimonio siguiente">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   </a>
                </div>
 
@@ -416,63 +449,62 @@
             </div>
          </div>
       </div>
-   </div>
-   </div>
-   </div>
-   </div>
+   </section>
    <!-- end Our  Clients -->
    <!-- start Contact Us-->
 
-   <div id="plant" class="contact_us layout_padding">
+   <section id="plant" class="contact_us layout_padding" aria-labelledby="contacto-titulo">
       <div class="container">
          <div class="row">
             <div class="col-md-12 ">
                <div class="titlepage">
-                  <h2><strong class="black"> Contacta</strong> Con Nosotros</h2>
-                  <span style="text-align: center;">Si quieres ponerte en forma y ser la envidia de tú familia estas navidades suscribete a nuestra app</span>
+                  <h2 id="contacto-titulo"><strong class="black">Contacta</strong> Con Nosotros</h2>
+                  <p style="text-align: center;">Si quieres ponerte en forma y ser la envidia de tu familia estas navidades suscríbete a nuestra app</p>
                </div>
             </div>
          </div>
       </div>
-   </div>
+   </section>
 
-   <div class="contact_us_2 layout_padding paddind_bottom_0">
+   <section class="contact_us_2 layout_padding paddind_bottom_0">
       <div class="container">
          <div class="row">
             <div class="contact_us_3 layout_padding">
                <div class="row">
                   <div class="col-md-4">
-                     <h1 style="color: #ffffff; ">Newsletter</h1>
-                     <p class="long_text">Apuntate a nuestro Newsletter para conocer las últimas novedades del workout</p>
+                     <h2 style="color: #ffffff; ">Newsletter</h2>
+                     <p class="long_text">Apúntate a nuestro Newsletter para conocer las últimas novedades del workout</p>
                   </div>
                   <div class="col-md-8">
                      <div class="email_text">
-                        <div class="input-group mb-3">
+                        <form class="input-group mb-3">
+                           <label for="newsletter-email" class="sr-only">Email para newsletter</label>
                            <input
+                              id="newsletter-email"
                               style="border-bottom-left-radius: 20px !important; border-top-left-radius: 20px !important;"
-                              type="text" class="form-control" placeholder="Pon aquí el email">
+                              type="email" class="form-control" placeholder="Pon aquí el email" required>
                            <div class="input-group-append">
                               <button
                                  style="border-top-right-radius: 20px !important; border-bottom-right-radius: 20px !important; color: #fff; padding-bottom: 10px; padding-top: 10px;"
-                                 class="btn btn-primary" type="Subscribe">Suscribete</button>
+                                 class="btn btn-primary" type="submit">Suscríbete</button>
                            </div>
-                        </div>
+                        </form>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
+   </section>
 
 
-   <div id="footer" class="Address layout_padding">
+   <footer id="footer" class="Address layout_padding" role="contentinfo">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
                <div class="titlepage">
                   <div class="main">
-                     <h1 class="address_text">Dirección</h1>
+                     <h2 class="address_text">Dirección</h2>
                   </div>
                </div>
             </div>
@@ -481,41 +513,41 @@
             <div class="row">
                <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="site_info">
-                     <span class="info_icon"><img src="images/map-icon.png" /></span>
-                     <span style="margin-top: 10px;">Calle Aragón 28 Planta 5, Barcelona</span></div>
+                     <span class="info_icon"><img src="images/map-icon.png" alt="Icono de ubicación" /></span>
+                     <address style="margin-top: 10px;">Calle Aragón 28 Planta 5, Barcelona</address></div>
                </div>
                <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="site_info">
-                     <span class="info_icon"><img src="images/phone-icon.png" /></span>
-                     <span style="margin-top: 21px;">( +34 900 494 805 )</span></div>
+                     <span class="info_icon"><img src="images/phone-icon.png" alt="Icono de teléfono" /></span>
+                     <a href="tel:+34900494805" style="margin-top: 21px;">(+34 900 494 805)</a></div>
                </div>
                <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="site_info">
-                     <span class="info_icon"><img src="images/email-icon.png" /></span>
-                     <span style="margin-top: 21px;">eae@eae.es</span></div>
+                     <span class="info_icon"><img src="images/email-icon.png" alt="Icono de email" /></span>
+                     <a href="mailto:eae@eae.es" style="margin-top: 21px;">eae@eae.es</a></div>
                </div>
             </div>
          </div>
       </div>
-      <div class="menu_main">
+      <nav class="menu_main" role="navigation" aria-label="Navegación del pie de página">
          <div class="menu_text">
             <ul>
-               <li class="active"><a href="#">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="testmonial.html">Testmonial</a></li>
-               <li><a href="clients.html">Shop</a></li>
-               <li><a href="contact.html">Contact Us</a></li>
+               <li class="active"><a href="index.html" aria-current="page">Inicio</a></li>
+               <li><a href="about.html">Sobre Nosotros</a></li>
+               <li><a href="testmonial.html">Testimonios</a></li>
+               <li><a href="clients.html">Clientes</a></li>
+               <li><a href="contact.html">Contacto</a></li>
             </ul>
          </div>
-      </div>
-   </div>
+      </nav>
+   </footer>
    </div>
 
    <!-- end Contact Us-->
    <!-- footer start-->
    <div id="plant" class="footer layout_padding">
       <div class="container">
-         <p>© 2021 All Rights Reserved. Design by<a href="https://html.design/"> Mag2Workout Coding Team</a></p>
+         <p>© 2021 All Rights Reserved. Design by <a href="https://html.design/">Mag2Workout Coding Team</a></p>
       </div>
    </div>
 

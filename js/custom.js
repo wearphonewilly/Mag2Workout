@@ -368,5 +368,61 @@ $(function () {
 		interval: 5000
 	});
 
+	// Accesibilidad: gestión de foco y ARIA para formularios y carrusel
+	function announce(message) {
+		let live = document.getElementById('aria-live');
+		if (!live) {
+			live = document.createElement('div');
+			live.id = 'aria-live';
+			live.setAttribute('aria-live', 'polite');
+			live.setAttribute('role', 'status');
+			live.className = 'sr-only';
+			document.body.appendChild(live);
+		}
+		live.textContent = '';
+		setTimeout(function() { live.textContent = message; }, 100);
+	}
+
+	// Carrusel accesible: controles por teclado
+	const pauseBtn = document.getElementById('carousel-pause');
+	const playBtn = document.getElementById('carousel-play');
+	if (pauseBtn && playBtn) {
+		[pauseBtn, playBtn].forEach(btn => {
+			btn.addEventListener('keydown', function(e) {
+				if (e.key === ' ' || e.key === 'Enter') {
+					e.preventDefault();
+					btn.click();
+				}
+			});
+		});
+		pauseBtn.addEventListener('click', function() {
+			announce('Carrusel pausado');
+		});
+		playBtn.addEventListener('click', function() {
+			announce('Carrusel reanudado');
+		});
+	}
+
+	// Formularios: anunciar errores
+	const forms = document.querySelectorAll('form');
+	forms.forEach(form => {
+		form.addEventListener('submit', function(e) {
+			const email = form.querySelector('input[type="email"]');
+			if (email && !email.validity.valid) {
+				e.preventDefault();
+				let error = form.querySelector('.aria-error');
+				if (!error) {
+					error = document.createElement('div');
+					error.className = 'aria-error';
+					error.setAttribute('role', 'alert');
+					error.setAttribute('aria-live', 'assertive');
+					error.textContent = 'Por favor, introduce un correo electrónico válido.';
+					email.parentNode.insertBefore(error, email.nextSibling);
+				}
+				announce('Error en el formulario: correo electrónico no válido');
+				error.focus && error.focus();
+			}
+		});
+	});
 
 });
